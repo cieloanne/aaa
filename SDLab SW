@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int n;
+    cout << "Enter the number of numbers to sum: ";
+    cin >> n;
+    int total_numbers = n;
+    int sum = 0;
+    while (n >= 0) {
+        sum += n;
+        n--;
+    }
+    cout << "Sum: " << sum << endl;
+    double average = (double) sum / total_numbers;
+    cout << "Average: " << average << endl;
+    return 0;
+}
